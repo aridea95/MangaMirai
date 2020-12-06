@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College List</title>
+    <style>
+        body {
+            font-family: "Avenir", sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        th,td {
+            padding : 10px;
+        }
+        thead {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add User</h1>
+        
+    <a href="/">Home</a>
+    <a href="/users">Users</a>
+    <a href="/users/add">Add user</a>
+    
+    <h2>Ini halaman ADD  USER</h2>
+    <form action="/users/add" method="post">
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="name" name="password" id="password" placeholder="Password">
+        <input type="text" name="email" id="email" placeholder="Email">
+        <input type="text" name="age" id="age" placeholder="Umur">
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>        
+        <input type="submit" value="Simpan">
+    </form>
+</body>
+</html>
